@@ -20,3 +20,6 @@ jobs:
           cat metrics.txt >> report.md
           cml publish plot.png --md --title 'Confusion Matrix' >> report.md
           cml send-comment report.md
+          cat classification_report.txt >> report_2.md
+          cml send-comment report_2.md
+

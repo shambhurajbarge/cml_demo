@@ -1,0 +1,19 @@
+[33mcommit c2f13e827facb3c4f4c934c87459167a940e5aca[m[33m ([m[1;36mHEAD -> [m[1;32mdev[m[33m, [m[1;31morigin/dev[m[33m)[m
+Author: Shambhuraje Barge <Shambhuraje.Barge@ril.com>
+Date:   Fri Feb 11 11:19:50 2022 +0530
+
+    dev RandomForestClassifier commit
+
+[1mdiff --git a/train.py b/train.py[m
+[1mindex 2b61aa5..110e653 100644[m
+[1m--- a/train.py[m
+[1m+++ b/train.py[m
+[36m@@ -13,7 +13,7 @@[m [my_test = np.genfromtxt("data/test_labels.csv")[m
+ [m
+ # Fit a model[m
+ depth = 5[m
+[31m-clf = BaggingClassifier()[m
+[32m+[m[32mclf = RandomForestClassifier()[m
+ clf.fit(X_train, y_train)[m
+ [m
+ acc = clf.score(X_test, y_test)[m
